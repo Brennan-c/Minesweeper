@@ -1,5 +1,4 @@
 import de.bezier.guido.*;
-//Declare and initialize constants NUM_ROWS and NUM_COLS = 20
 private final static int NUM_ROWS = 15;
 private final static int NUM_COLS = 15;
 private final static int NUM_MINES =  50;
