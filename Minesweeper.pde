@@ -4,8 +4,8 @@ private final static int NUM_COLS = 15;
 private final static int NUM_MINES =  50;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> mines = new ArrayList <MSButton>(); //ArrayList of just the minesweeper buttons that are mined
-boolean wonned = false;
-boolean lossed = false;
+boolean won = false;
+boolean lost = false;
 
 void setup ()
 {
@@ -61,12 +61,12 @@ public boolean isWon()
 public void displayLosingMessage()
 {
     System.out.println("loss");
-    lossed = true;
+    lost = true;
 }
 public void displayWinningMessage()
 {
     System.out.println("win");
-    wonned = true;
+    won = true;
 }
 
 public boolean isValid(int r, int c)
@@ -157,7 +157,7 @@ public class MSButton
         textSize(width/5);
         text(myLabel,x+width/2,y+height/2);
         
-        if(wonned == true){
+        if(won == true){
         textSize(width/4);
         setLabel("you won!");
         }
