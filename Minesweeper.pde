@@ -61,12 +61,12 @@ public boolean isWon()
 
 public void displayLosingMessage()
 {
-    System.out.println("loss");
+
     lost = true;
 }
 public void displayWinningMessage()
 {
-    System.out.println("win");
+
     won = true;
 }
 
